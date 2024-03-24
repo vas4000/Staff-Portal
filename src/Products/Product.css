@@ -4,48 +4,60 @@
   margin-left: 20rem;
   margin-top: 2rem;
   z-index: -2;
+  margin-top: 100px;
 }
 
 .card {
-  margin: 20px;
-  border: 2px solid #ededed;
-  padding: 20px;
+  width: 300px; 
+  margin: 20px; 
+  padding: 20px;  
   cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; 
 }
 
 .card:hover {
-    background-color: #aa558c;
+  background-color: #356e89;
 }
 
 .card-img {
-  width: 13rem;
+  width: 100%; 
+  height: auto; 
   margin-bottom: 1rem;
 }
 
 .card-title {
-  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  transition: white-space 0.5s ease; 
 }
 
-.card-reviews {
-  margin-bottom: 1rem;
-  display: flex;
+.card:hover .card-title {
+  white-space: normal; 
 }
 
-.rating-star {
-  color: #d5ab55;
+.fancy-button {
+  background-color: #007BFF; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-.total-reviews {
-  font-size: 0.9rem;
-  margin-left: 10px;
+.fancy-button:hover {
+  background-color: #00b330; 
+  transform: scale(1.05); 
 }
 
-.card-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.fancy-button:active {
+  transform: scale(0.95); 
 }
 
-.bag-icon {
-  color: #535353;
-}

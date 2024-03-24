@@ -15,15 +15,9 @@ function Category({ handleChange }) {
           <input onChange={handleChange} type="radio" value="" name="test" />
           <span className="checkmark"></span>All Cources
         </label>
-        {/* <Input
-          handleChange={handleChange}
-          value="6 to 9"
-          title="My Cources"
-          name="test"
-        /> */}
         <Input
           handleChange={handleChange}
-          value="10 to 17"
+          value="Enrolled"
           title="My Cources"
           name="test"
         />
